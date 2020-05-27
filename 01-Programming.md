@@ -39,13 +39,13 @@ We start with a bit of theory about programming, introduce Python and show why w
 
 ### In summary
 
-Action | Compiled | Interpreted |
- - | - | - |
- How can we run it? (e.g. after every change) | Always compile, then run. This can take minutes to hours. | Just run what you write as is right as you save the file.
- What is the format of what we run? | Binary, human unreadable. But tailored to given technology (e.g. windows, linux, mac, etc) | Human readable code just as we wrote it.
- Performance when running | Fast. Everything is in the computer understandable format since compiling. | Generally slower as it is 'compiled' (very loosely said) during the run-time.
- Code issue detection | Compiling reveals a lot of issues that could happen or mismatch. Guarantees the program can run (unless some logical errors are present) | We do not see problems before we run into them (this is not entirely true, but let's go with it for now)
- Troubleshooting if the program crashes | Harder to pintpoint exact problem. This happens more often during compiling, but is hard to map back once compiled (although there are ways, but generally more annoying) | You easily see which line the program broke on as it executes line by line.
+| Action | Compiled | Interpreted |
+| - | - | - |
+| How can we run it? (e.g. after every change) | Always compile, then run. This can take minutes to hours. | Just run what you write as is right as you save the file. |
+| What is the format of what we run? | Binary, human unreadable. But tailored to given technology (e.g. windows, linux, mac, etc) | Human readable code just as we wrote it. |
+| Performance when running | Fast. Everything is in the computer understandable format since compiling. | Generally slower as it is 'compiled' (very loosely said) during the run-time. |
+| Code issue detection | Compiling reveals a lot of issues that could happen or mismatch. Guarantees the program can run (unless some logical errors are present) | We do not see problems before we run into them (this is not entirely true, but let's go with it for now) |
+| Troubleshooting if the program crashes | Harder to pintpoint exact problem. This happens more often during compiling, but is hard to map back once compiled (although there are ways, but generally more annoying) | You easily see which line the program broke on as it executes line by line. |
 
 ## Dynamic/static variable types
 
