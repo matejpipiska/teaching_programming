@@ -20,7 +20,7 @@ These documents are mostly supposed to serve as a guideline of topics to be cove
 - Trying Python Command Line interpreter
 - Trying to write and run a program
 
-### Core concepts in programming
+### [Core concepts in programming](./03-Core_concepts.md)
 - Input/output
 - Variables (assignment, various types, None)
 - Statements (conditionals) and branching
