@@ -8,8 +8,8 @@ Anything coming in our out of a program/computer :) Sometime abbreviated IO, I/O
 There is something called standard input and standard output, which generally refers to what you see put in and read from your terminal window.
 
 - **keyboard/screen**
-    - `input_raw()`/`print()`
-    - `name = input_raw("What is your name? ")`
+    - `raw_input()`/`print()`
+    - `name = raw_input("What is your name? ")`
     - `print("Hello " + name)`
     - NOTE - in python3 it is just `input()`
 - **files**
@@ -79,7 +79,7 @@ Since our program probably needs to decide on something, at some point of time, 
 
 Example:
 ```python
-age = read("How old are you? ")
+age = raw_input("How old are you? ")
 age = int(text)
 
 if age < 18:
@@ -108,12 +108,40 @@ print("The total age is: ", int(total_age)) # once finished, we print out the re
 ```
 
 ## Functions
+Functions help us 'wrap' a piece of code and only provide those variables that change its behaviour. Additionally they can help us work with code as 'modules' or building blocks, without needing to worry how they operate.
 
+For instance, we could create a function that adds 2 numbers for us, and then we do not need to worry about it again. We could call it e.g. `add(x, y)`.
+
+Or for instance, it could be even simplier, like adding a function that executes `print("---")` as our 'line separator'. Then we use this function across the program. If we ever happen to need to change the separator to something else, we can simply modify this one function, instead of having to go through the whole code and change it everywhere.
+
+The functions have generally the following format:
 ```
-def <name of function>(<parameters>):
+def <name of function>(<comma separated parameters>):
+    command1
+    command2
+    command3
     ...
-    commands
+    commandX
+
+```
+The code in the function is a 'code block' and needs to be indented (shifted 4 characters to the right)
+
+If the function is supposed to give something back for further processing, it does so using `return` statement.
+
+Let's show an example of a function that adds 2 numbers.
+
+```python
+def add(x, y):
+    return x + y
 ```
 
-- Functions (grouping and reusing of code)
+To call this function, we could use:
+```python
+print(add(3, 7))
+
+# we can also store the result in a variable and use it further in the code
+result = add(10, 15)
+print(result)
+```
+
 - Error handling
