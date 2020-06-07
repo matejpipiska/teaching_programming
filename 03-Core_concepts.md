@@ -107,7 +107,13 @@ for age in ages: # here we iterate over every number in the ages list
 print("The total age is: ", int(total_age)) # once finished, we print out the result :)
 ```
 
+## Functions
 
+```
+def <name of function>(<parameters>):
+    ...
+    commands
+```
 
 - Functions (grouping and reusing of code)
 - Error handling
