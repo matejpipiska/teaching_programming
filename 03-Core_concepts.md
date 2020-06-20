@@ -144,4 +144,52 @@ result = add(10, 15)
 print(result)
 ```
 
-- Error handling
+## Error handling
+Another aspect that allows us to control the flow of a program is related to handling errors. Normally, if an error happens, a program would 'crash' and stop. This would mean we'd need to re-start it and everything has to be re-loaded again.
+
+This is why a concept of error handling and 'expecting' of errors was introduced. This comes with a whole ecosystem for 'raising' errors and handling errors that we 'expect'. Many default libraries come with various exceptions that we can handle out of the box. Of course, any unexpected exception will still halt the program execution, and should then be implemented in the program.
+
+In Python, we designate a `try:` block of code, that could potentially raise eceptions. Then anything inside that block, if exception is encountered, will be handled by the following `except:` block.
+
+```python
+try:
+    ...
+except:
+    ...
+```
+
+In practice, it looks something like this:
+
+
+```python
+try:
+    a = 10 / 0
+except ZeroDivisionError:
+    print("Something went wrong, but the program continues!")
+```
+
+This way, instead of the ugly error from Python, we 'handle' the exception and continue in program execution.
+
+This can for instance be useful when loading a big amount of data, where some of it could be malformed, or e.g. trying to open a file and the file does not exist, so we ask the user again.
+
+And since this is a programming language, we can make our own exceptions, too.
+
+To create (and raise) an exception, we use the `raise` command.
+
+E.g.
+
+```python
+def division(x, y):
+    if y == 0:
+        raise ValueError("We do not support division by 0!")
+    return x / y
+
+try:
+    division(3, 0)
+except ValueError:
+    print("Maybe we should try again with a non-zero value")
+```
+
+Of course, this example is silly, as we could just try to divide as is, and catch the ZeroDivisionError directly.
+
+Some documentation and examples can be found [here](https://docs.python.org/3/tutorial/errors.html)
