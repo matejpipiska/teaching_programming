@@ -4,6 +4,8 @@ This lesson set is supposed to help an individual learn basic concepts of progra
 
 These documents are mostly supposed to serve as a guideline of topics to be covered, for now, although they might be expanded in the future to cover more detail.
 
+Some good Tutorial is also found at [official pages of python.org](https://docs.python.org/3/tutorial/index.html)
+
 ## Agenda
 
 ### [What is programming?](./01-Programming.md)
@@ -33,7 +35,7 @@ These documents are mostly supposed to serve as a guideline of topics to be cove
 - Gives value back via return
 - Do nothing placeholder - pass
 - If no return, defaults to None
-- Parameters = input variables
+- Parameters = input variables; namespaces
 - Just the same code :)
 - Some default functions! print(), len()...
 - How to know what you can call? x.stuff(). Dir(x)
