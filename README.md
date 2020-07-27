@@ -30,7 +30,7 @@ Some good Tutorial is also found at [official pages of python.org](https://docs.
 - Functions (grouping and reusing of code)
 - Error handling
 
-### Functions and making code
+### [Functions and making code](./04-Functions.md)
 - def keyword
 - Gives value back via return
 - Do nothing placeholder - pass
