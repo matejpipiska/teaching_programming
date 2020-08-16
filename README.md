@@ -40,7 +40,7 @@ Some good Tutorial is also found at [official pages of python.org](https://docs.
 - Some default functions! print(), len()...
 - How to know what you can call? x.stuff(). Dir(x)
 
-### Types - Numbers
+### [Types - Numbers](./05-Numbers.md)
 - Recap about strict and dynamic typing
 - Different number types are represented (integer, float, hex, complex, binary, etc)
 - Functions and operators related to them and where to find them
