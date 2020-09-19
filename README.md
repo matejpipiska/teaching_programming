@@ -46,7 +46,7 @@ Some good Tutorial is also found at [official pages of python.org](https://docs.
 - Functions and operators related to them and where to find them
 - Converting between types
 
-### Types - Strings
+### [Types - Strings](./06-Strings.md)
 - empty string
 - single and double quotes and combining them
 - 'triple quoted block'
